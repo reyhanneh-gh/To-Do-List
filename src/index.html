@@ -189,8 +189,8 @@
                 <input id="editInp" type="text">
                 <button class"ebtn">Edit</button>
                 <div>
-                <span class="material-symbols-outlined checkmark">circle</span>
-                <span data-state='off' class="material-symbols-outlined editBtn">edit_document</span>
+                <span data-state='off' class="material-symbols-outlined checkmark">circle</span>
+                <span class="material-symbols-outlined editBtn">edit_document</span>
                 <span class="material-symbols-outlined delBtn">delete</span> 
                 </div>
                 `
@@ -260,8 +260,19 @@
             // ------------------check----------------------
             let c = task.querySelector('.checkmark')
             c.addEventListener('click', () => {
-                c.innerHTML = `<span class="material-symbols-outlined">check_circle</span>`
-                c.style.color = 'rgb(4, 177, 85)'
+                if (c.dataset.state === 'off') {
+                    c.innerHTML = `<span class="material-symbols-outlined">check_circle</span>`
+                    c.style.color = 'rgb(4, 177, 85)'
+                    h5.innerHTML = `<del>${h5.innerText}</del>`
+                    c.dataset.state = 'on'
+                }else{
+                    c.innerHTML = `<span class="material-symbols-outlined">circle</span>`
+                    c.style.color = 'rgb(253, 245, 191)'
+                    h5.innerHTML = h5.innerText
+                    c.dataset.state = 'off'
+
+                }
+
             })
         }
 
