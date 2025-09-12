@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 .favColor1 {
-    background-color: #fdf5bf;
+    background-color: rgb(253, 245, 191);
 }
 
 .favColor2 {
@@ -13,6 +13,6 @@
 }
 
 .myBg{
-    background-color: #fdf5bf58;
+    background-color: rgba(253, 245, 191, 0.345);
     backdrop-filter: blur(50px);
 }

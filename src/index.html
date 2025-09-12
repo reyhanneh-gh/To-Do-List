@@ -187,7 +187,7 @@
             task.innerHTML =
                 ` <h5>${tsk}</h5>
                 <input id="editInp" type="text">
-                <button>Edit</button>
+                <button class"ebtn">Edit</button>
                 <div>
                 <span class="material-symbols-outlined checkmark">circle</span>
                 <span data-state='off' class="material-symbols-outlined editBtn">edit_document</span>
@@ -245,10 +245,17 @@
             })
             // ------------------edit-----------------------
             let editBtn = document.querySelector('.editBtn')
+            let h5 = task.querySelector('h5')
             task.querySelector('input').value = tskInp.value
+            innerBtn = task.querySelector('button')
             editBtn.addEventListener('click', () => {
                 task.querySelector('input').style.visibility = 'visible'
                 task.querySelector('button').style.visibility = 'visible'
+                innerBtn.addEventListener('click', () => {
+                    h5.innerText = task.querySelector('input').value
+                    task.querySelector('input').style.visibility = 'hidden'
+                    task.querySelector('button').style.visibility = 'hidden'
+                })
             })
             // ------------------check----------------------
             let c = task.querySelector('.checkmark')
