@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+.favColor1 {
+    background-color: #fdf5bf;
+}
+
+.favColor2 {
+    background-color: #8ab8a8;
+}
+
+.favFont {
+    font-family: "Signika Negative", sans-serif;
+}
+
+.myBg{
+    background-color: #fdf5bf58;
+    backdrop-filter: blur(50px);
+}

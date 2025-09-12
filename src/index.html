@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style/master.css">
+    <link rel="stylesheet" href="style/output.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Signika+Negative:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+
+<body class="w-full h-[100vh] flex justify-evenly items-center favFont relative py-5">
+    <!-- -------------------menu mobile version----------------------- -->
+    <nav id="nav" class="md:hidden absolute z-10 top-0 -left-[400px] flex w-1/2 h-full flex-wrap justify-center items-center favColor1
+        rounded-[10px]">
+        <figure class="w-full h-fit absolute top-0 left-0">
+            <img class="object-cover" src="assets/img/Project (20250911072123).png" alt="">
+        </figure>
+        <span id="closeBtn"
+            class="material-symbols-outlined absolute top-5 right-5 text-[#8ab8a8] hover:scale-[1.5] cursor-pointer duration-500">close</span>
+        <ul class="w-full h-fit flex flex-wrap justify-center items-center px-2.5">
+            <li
+                class="w-full h-fit flex justify-center items-center *:p-2.5 border-b border-b-[#8ab8a8] *:w-full *:h-full *:flex *:items-center *:hover:bg-[rgba(138,184,168,0.3)] *:duration-500 text-gray-700">
+                <a href="#"><span class="material-symbols-outlined pr-2 text-[#8ab8a8]">today</span>Daily Tasks</a>
+            </li>
+            <li
+                class="w-full h-fit flex justify-center items-center *:p-2.5 border-b border-b-[#8ab8a8] *:w-full *:h-full *:flex *:items-center *:hover:bg-[rgba(138,184,168,0.3)] *:duration-500 text-gray-700">
+                <a href="index2.html"><span
+                        class="material-symbols-outlined pr-2 text-[#8ab8a8]">favorite</span>Favorites</a>
+            </li>
+            <li
+                class="w-full h-fit flex justify-center items-center *:p-2.5 border-b border-b-[#8ab8a8] *:w-full *:h-full *:flex *:items-center *:hover:bg-[rgba(138,184,168,0.3)] *:duration-500 text-gray-700">
+                <a href="index3.html"><span
+                        class="material-symbols-outlined pr-2 text-[#8ab8a8]">date_range</span>Weekly Planner</a>
+            </li>
+            <li
+                class="trash w-full h-fit flex justify-center items-center *:p-2.5 *:w-full *:h-full *:flex *:items-center *:hover:bg-[rgba(138,184,168,0.3)] *:duration-500 text-gray-700">
+                <span class="cursor-pointer">
+                    <span class="material-symbols-outlined pr-2 text-[#8ab8a8]">delete</span>Trash
+                </span>
+
+            </li>
+        </ul>
+    </nav>
+    <!-- ---------------menu in larger screen version----------------- -->
+    <nav class="hidden md:flex w-[20%] h-full flex-wrap justify-center items-center favColor1 rounded-[10px] relative">
+        <figure class="w-full h-fit absolute top-0 left-0">
+            <img class="object-cover" src="assets/img/Project (20250911072123).png" alt="">
+        </figure>
+        <ul class="w-full h-fit flex flex-wrap justify-center items-center px-2.5">
+            <li
+                class="w-full h-fit flex justify-center items-center *:p-2.5 border-b border-b-[#8ab8a8] *:w-full *:h-full *:flex *:items-center *:hover:bg-[rgba(138,184,168,0.3)] *:duration-500 text-gray-700">
+                <a href="#"><span class="material-symbols-outlined pr-2 text-[#8ab8a8]">home</span>Home</a>
+            </li>
+            <li
+                class="w-full h-fit flex justify-center items-center *:p-2.5 border-b border-b-[#8ab8a8] *:w-full *:h-full *:flex *:items-center *:hover:bg-[rgba(138,184,168,0.3)] *:duration-500 text-gray-700">
+                <a href="index2.html"><span
+                        class="material-symbols-outlined pr-2 text-[#8ab8a8]">favorite</span>Favorites</a>
+            </li>
+            <li
+                class="w-full h-fit flex justify-center items-center *:p-2.5 border-b border-b-[#8ab8a8] *:w-full *:h-full *:flex *:items-center *:hover:bg-[rgba(138,184,168,0.3)] *:duration-500 text-gray-700">
+                <a href="index3.html"><span
+                        class="material-symbols-outlined pr-2 text-[#8ab8a8]">date_range</span>Weekly Planner</a>
+            </li>
+            <li
+                class="trash w-full h-fit flex justify-center items-center *:p-2.5 *:w-full *:h-full *:flex *:items-center *:hover:bg-[rgba(138,184,168,0.3)] *:duration-500 text-gray-700">
+                <span class="cursor-pointer">
+                    <span class="material-symbols-outlined pr-2 text-[#8ab8a8]">delete</span>Trash
+                </span>
+            </li>
+        </ul>
+    </nav>
+    <main class="w-[95%] md:w-[75%] h-full flex flex-wrap justify-center favColor2 rounded-[10px] relative">
+        <div id="navBtn"
+            class="size-[50px] rounded-[10px] favColor1 flex justify-center items-center absolute top-5 left-5 md:hidden cursor-pointer">
+            <span class="material-symbols-outlined text-[#8ab8a8] hover:scale-[1.5] duration-500">menu</span>
+        </div>
+        <div
+            class="w-full h-fit p-5 flex flex-wrap justify-center items-center my-[70px] border-b border-b-[#fdf5bf] gap-2.5 md:mt-0">
+            <input type="text" name="" id="tsk" placeholder="Enter a Task ..."
+                class="w-[70%] md:w-[40%] h-[50px] flex items-center p-2.5 bg-[#ffffff7e] placeholder:text-[#506b61] rounded-[10px]">
+            <button id="addtsk"
+                class="size-[50px] flex justify-center items-center favColor1 text-[#8ab8a8] rounded-[10px] *:hover:scale-[1.5] *:duration-300 cursor-pointer"><span
+                    class="material-symbols-outlined">add</span></button>
+
+
+            <!-- ---------------------search bar--------------------------- -->
+            <input type="text" autocomplete="off" placeholder="Search ..."
+                class="w-[70%] md:w-[40%] h-[50px] flex items-center p-2.5 bg-[#ffffff7e] placeholder:text-[#506b61] rounded-[10px]">
+            <button
+                class="size-[50px] flex justify-center items-center favColor1 text-[#8ab8a8] rounded-[10px] *:hover:scale-[1.5] *:duration-300 cursor-pointer"><span
+                    class="material-symbols-outlined">search</span></button>
+        </div>
+        <!-- ---------------------task list--------------------------- -->
+        <div id="tsklist" class="w-full min-h-[70%] max-h-[75%] overflow-y-auto p-5 flex flex-wrap justify-center">
+            <ul
+                class="w-[95%] h-fit flex flex-wrap justify-center *:p-2.5 gap-y-2 *:flex *:items-center *:w-full *:h-fit *:bg-[#ffffff3b] *:text-gray-700 *:rounded-[10px]">
+            </ul>
+        </div>
+    </main>
+    <!-- ---------------------pop up--------------------------- -->
+    <div class="hidden w-full h-[100vh] myBg absolute top-0 left-0 justify-center items-center z-20">
+        <figure class="relative w-[400px] h-fit">
+            <img class="-z-10 w-[50%] absolute top-[-130px] left-[50%] translate-x-[-50%]"
+                src="assets/img/Project (20250911054929).png" alt="">
+            <img class="object-cover z-30" src="assets/img/Project (20250911052014).png" alt="">
+            <div
+                class="absolute w-[85%] h-fit top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] flex flex-wrap justify-center items-center">
+                <h6 class="w-full h-fit text-center text-xl text-[#8ab8a8]">🎉 Well Done! 🎉</h6>
+                <p class="w-full text-center text-gray-700 py-2.5">You have succsessfully completed 3 tasks.
+                    This is you
+                    reminder to give yourself a break by doing your favorite activities.</p>
+                <div class="w-full h-fit flex justify-center items-center gap-x-5 *:hover:scale-[1.1] *:duration-300">
+                    <a class="w-fit h-fit p-2.5 flex justify-center items-center bg-[#8ab8a8] rounded-[10px] text-white text-[14px]"
+                        href="index2.html">Go to favorites</a>
+                    <a class="w-fit h-fit p-2.5 flex justify-center items-center border border-[#8ab8a8] text-[#8ab8a8] rounded-[10px] text-[14px]"
+                        href="index.html">Not now</a>
+                </div>
+            </div>
+        </figure>
+    </div>
+    <!-- ------------------------Trash----------------------------- -->
+    <div id="bin" class="w-full h-[100vh] myBg absolute top-0 left-0 flex justify-center items-center z-20">
+        <aside class="w-[90%] md:w-[75%] h-[90vh] flex flex-wrap justify-center favColor2 rounded-[10px] relative">
+            <span id="bincls"
+                class="material-symbols-outlined absolute top-5 right-5 text-[#fdf5bf] hover:scale-[1.5] cursor-pointer duration-500">close</span>
+        </aside>
+    </div>
+</body>
+<script>
+    // ---------------toggle menu-----------------
+    let n = document.getElementById('navBtn')
+    let _close = document.getElementById('closeBtn')
+    let _nav = document.getElementById('nav')
+    n.addEventListener('click', () => {
+        _nav.style.left = '0px'
+        _nav.style.transition = '1s'
+    })
+    _close.addEventListener('click', () => {
+        _nav.style.left = '-400px'
+        _close.style.transform = 'rotate(180deg)'
+        _close.style.transition = '1s'
+        _nav.style.transition = '1s'
+    })
+    // -------------------trash--------------------
+    let t = document.querySelectorAll('.trash')
+    let _binclose = document.getElementById('bincls')
+    let _bin = document.getElementById('bin')
+    _bin.style.display = 'none'
+    t.forEach(item => {
+        item.addEventListener('click', () => {
+            _bin.style.display = 'flex'
+        })
+    })
+
+    _binclose.addEventListener('click', () => {
+        _bin.style.display = 'none'
+        _binclose.style.transform = 'rotate(180deg)'
+        _binclose.style.transition = '1s'
+        _binclose.style.cursor = 'pointer'
+    })
+    // ------------------to do--------------------
+    let tskInp = document.getElementById('tsk')
+    let tskBtn = document.getElementById('addtsk')
+    let tsklist = document.querySelector('#tsklist>ul')
+    tskBtn.addEventListener('click', () => {
+        let tsk = tskInp.value
+        if (tsk === "") {
+            alert('please enter a task!')
+        } else {
+            addtsk(tsk)
+            tskInp.value = ""
+            tskInp.focus()
+        }
+        function addtsk(tsk) {
+            let task = document.createElement('li')
+            task.classList.add('task')
+            task.innerHTML =
+                ` <h5>${tsk}</h5>
+                <div>
+                <span class="material-symbols-outlined">edit_document</span>
+                <span class="material-symbols-outlined">delete</span> 
+                </div>
+                `
+
+            task.style.display = 'flex'
+            task.style.alignItems = 'center'
+            task.style.justifyContent = 'space-between'
+            task.querySelector('div').style.display = 'flex'
+            task.querySelector('div').style.alignItems = 'center'
+            task.querySelector('div').style.gap = '10px'
+            task.querySelectorAll('div > span').forEach(item => {
+                item.style.color = '#fdf5bf'
+            })
+
+            tsklist.appendChild(task)
+
+        }
+    })
+    // ------------------delete--------------------
+
+
+</script>
+
+</html>
