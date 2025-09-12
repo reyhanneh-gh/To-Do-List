@@ -128,6 +128,11 @@
         <aside class="w-[90%] md:w-[75%] h-[90vh] flex flex-wrap justify-center favColor2 rounded-[10px] relative">
             <span id="bincls"
                 class="material-symbols-outlined absolute top-5 right-5 text-[#fdf5bf] hover:scale-[1.5] cursor-pointer duration-500">close</span>
+            <div class=" mt-[50px] w-full min-h-[70%] max-h-[75%] overflow-y-auto p-5 flex flex-wrap justify-center">
+                <ul
+                    class="w-[95%] h-fit flex flex-wrap justify-center *:p-2.5 gap-y-2 *:flex *:items-center *:w-full *:h-fit *:bg-[#ffffff3b] *:text-gray-700 *:rounded-[10px]">
+                </ul>
+            </div>
         </aside>
     </div>
 </body>
@@ -183,7 +188,7 @@
                 ` <h5>${tsk}</h5>
                 <div>
                 <span class="material-symbols-outlined">edit_document</span>
-                <span class="material-symbols-outlined">delete</span> 
+                <span class="material-symbols-outlined delBtn">delete</span> 
                 </div>
                 `
 
@@ -196,12 +201,26 @@
             task.querySelectorAll('div > span').forEach(item => {
                 item.style.color = '#fdf5bf'
             })
+            task.querySelectorAll('div > span').forEach(item => {
+                item.style.cursor = 'pointer'
+            })
 
             tsklist.appendChild(task)
 
+            // ------------------delete--------------------
+
+            let delBtn = task.querySelector('.delBtn')
+            let dellist = document.querySelector('#bin>aside>div>ul')
+            delBtn.addEventListener('click', () => {
+                dellist.appendChild(task)
+
+            })
+
         }
+
     })
-    // ------------------delete--------------------
+
+
 
 
 </script>
