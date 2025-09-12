@@ -80,7 +80,8 @@
             <span class="material-symbols-outlined text-[#8ab8a8] hover:scale-[1.5] duration-500">menu</span>
         </div>
         <div
-            class="w-full h-fit p-5 flex flex-wrap justify-center items-center my-[70px] border-b border-b-[#fdf5bf] gap-2.5 md:mt-0">
+            class="w-full h-fit p-5 flex flex-wrap justify-center items-center mt-[70px] border-b border-b-[#fdf5bf] gap-2.5 md:mt-0">
+            <!-- ---------------------task bar--------------------------- -->
             <input type="text" name="" id="tsk" placeholder="Enter a Task ..."
                 class="w-[70%] md:w-[40%] h-[50px] flex items-center p-2.5 bg-[#ffffff7e] placeholder:text-[#506b61] rounded-[10px]">
             <button id="addtsk"
@@ -96,6 +97,10 @@
                     class="material-symbols-outlined">search</span></button>
         </div>
         <!-- ---------------------task list--------------------------- -->
+        <!-- ---------------------Date--------------------------- -->
+        <div class="w-full h-fit flex flex-wrap place-content-center">
+            <p id="date" class="flex place-content-center gap-y-2.5 p-1 text-[30px] text-[#fdf5bf]"></p>
+        </div>
         <div id="tsklist" class="w-full min-h-[70%] max-h-[75%] overflow-y-auto p-5 flex flex-wrap justify-center">
             <ul
                 class="w-[95%] h-fit flex flex-wrap justify-center *:p-2.5 gap-y-2 *:flex *:items-center *:w-full *:h-fit *:bg-[#ffffff3b] *:text-gray-700 *:rounded-[10px]">
@@ -168,6 +173,15 @@
         _binclose.style.transition = '1s'
         _binclose.style.cursor = 'pointer'
     })
+    // -------------------date--------------------
+    let today = new Date()
+    let _day = today.getDate()
+    let monthName = ["January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"
+    ]
+    let _month = monthName[today.getMonth()]
+    document.getElementById('date').innerHTML = _month + "  " + _day
+
     // ------------------to do--------------------
     let tskInp = document.getElementById('tsk')
     let tskBtn = document.getElementById('addtsk')
@@ -286,20 +300,17 @@
         tempH5.forEach((val) => {
             if (val.innerText.indexOf(searchVal) >= 0) {
                 val.parentElement.style.display = 'flex'
-                
-            }else if(val.innerText === ''){
-              val.parentElement.style.display = 'none'  
+
+            } else if (val.innerText === '') {
+                val.parentElement.style.display = 'none'
             }
-             else {
+            else {
                 val.parentElement.style.display = 'none'
 
             }
         })
 
     })
-
-
-
 
 </script>
 

@@ -12,6 +12,8 @@
     --color-orange-400: oklch(75% 0.183 55.934);
     --color-green-300: oklch(87.1% 0.15 154.449);
     --color-green-900: oklch(39.3% 0.095 152.535);
+    --color-sky-200: oklch(90.1% 0.058 230.902);
+    --color-sky-300: oklch(82.8% 0.111 230.318);
     --color-gray-700: oklch(37.3% 0.034 259.733);
     --color-gray-800: oklch(27.8% 0.033 256.848);
     --color-white: #fff;
@@ -231,6 +233,9 @@
   .mt-\[50px\] {
     margin-top: 50px;
   }
+  .mt-\[70px\] {
+    margin-top: 70px;
+  }
   .block {
     display: block;
   }
@@ -339,6 +344,9 @@
   .flex-wrap {
     flex-wrap: wrap;
   }
+  .place-content-center {
+    place-content: center;
+  }
   .items-center {
     align-items: center;
   }
@@ -359,6 +367,9 @@
   }
   .gap-y-2 {
     row-gap: calc(var(--spacing) * 2);
+  }
+  .gap-y-2\.5 {
+    row-gap: calc(var(--spacing) * 2.5);
   }
   .overflow-y-auto {
     overflow-y: auto;
@@ -398,8 +409,17 @@
   .bg-orange-400 {
     background-color: var(--color-orange-400);
   }
+  .bg-sky-200 {
+    background-color: var(--color-sky-200);
+  }
+  .bg-sky-300 {
+    background-color: var(--color-sky-300);
+  }
   .object-cover {
     object-fit: cover;
+  }
+  .p-1 {
+    padding: calc(var(--spacing) * 1);
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
@@ -449,6 +469,9 @@
   }
   .text-\[20px\] {
     font-size: 20px;
+  }
+  .text-\[30px\] {
+    font-size: 30px;
   }
   .text-\[\#8ab8a8\] {
     color: #8ab8a8;
