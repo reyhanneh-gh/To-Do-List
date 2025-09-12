@@ -479,6 +479,9 @@
   .text-\[\#fdf5bf\] {
     color: #fdf5bf;
   }
+  .text-\[\#fffceb\] {
+    color: #fffceb;
+  }
   .text-gray-700 {
     color: var(--color-gray-700);
   }
