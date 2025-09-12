@@ -221,6 +221,9 @@
   .mt-\[50px\] {
     margin-top: 50px;
   }
+  .block {
+    display: block;
+  }
   .flex {
     display: flex;
   }

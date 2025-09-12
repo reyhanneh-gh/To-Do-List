@@ -89,9 +89,9 @@
 
 
             <!-- ---------------------search bar--------------------------- -->
-            <input type="text" autocomplete="off" placeholder="Search ..."
+            <input id="tskSearch" type="text" autocomplete="off" placeholder="Search ..."
                 class="w-[70%] md:w-[40%] h-[50px] flex items-center p-2.5 bg-[#ffffff7e] placeholder:text-[#506b61] rounded-[10px]">
-            <button
+            <button id="searchBtn"
                 class="size-[50px] flex justify-center items-center favColor1 text-[#8ab8a8] rounded-[10px] *:hover:scale-[1.5] *:duration-300 cursor-pointer"><span
                     class="material-symbols-outlined">search</span></button>
         </div>
@@ -265,7 +265,7 @@
                     c.style.color = 'rgb(4, 177, 85)'
                     h5.innerHTML = `<del>${h5.innerText}</del>`
                     c.dataset.state = 'on'
-                }else{
+                } else {
                     c.innerHTML = `<span class="material-symbols-outlined">circle</span>`
                     c.style.color = 'rgb(253, 245, 191)'
                     h5.innerHTML = h5.innerText
@@ -275,6 +275,26 @@
 
             })
         }
+
+    })
+
+    // ------------------search--------------------
+
+    tskSearch.addEventListener('keyup', (e) => {
+        let searchVal = e.target.value
+        let tempH5 = document.querySelectorAll('.task>h5')
+        tempH5.forEach((val) => {
+            if (val.innerText.indexOf(searchVal) >= 0) {
+                val.parentElement.style.display = 'flex'
+                
+            }else if(val.innerText === ''){
+              val.parentElement.style.display = 'none'  
+            }
+             else {
+                val.parentElement.style.display = 'none'
+
+            }
+        })
 
     })
 
