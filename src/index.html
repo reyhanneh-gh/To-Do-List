@@ -186,8 +186,11 @@
             task.classList.add('task')
             task.innerHTML =
                 ` <h5>${tsk}</h5>
+                <input id="editInp" type="text">
+                <button>Edit</button>
                 <div>
-                <span class="material-symbols-outlined">edit_document</span>
+                <span class="material-symbols-outlined checkmark">circle</span>
+                <span data-state='off' class="material-symbols-outlined editBtn">edit_document</span>
                 <span class="material-symbols-outlined delBtn">delete</span> 
                 </div>
                 `
@@ -195,9 +198,34 @@
             task.style.display = 'flex'
             task.style.alignItems = 'center'
             task.style.justifyContent = 'space-between'
+            task.style.position = 'relative'
             task.querySelector('div').style.display = 'flex'
             task.querySelector('div').style.alignItems = 'center'
             task.querySelector('div').style.gap = '10px'
+            task.querySelector('input').style.visibility = 'hidden'
+            task.querySelector('input').style.width = '100%'
+            task.querySelector('input').style.height = '100%'
+            task.querySelector('input').style.borderRadius = '10px'
+            task.querySelector('input').style.backgroundColor = '#fdf5bf'
+            task.querySelector('input').style.position = 'absolute'
+            task.querySelector('input').style.left = '0px'
+            task.querySelector('input').style.display = 'flex'
+            task.querySelector('input').style.alignItems = 'center'
+            task.querySelector('input').style.padding = '10px'
+            task.querySelector('button').style.position = 'absolute'
+            task.querySelector('button').style.top = '50%'
+            task.querySelector('button').style.right = '30px'
+            task.querySelector('button').style.transform = 'translateY(-50%)'
+            task.querySelector('button').style.backgroundColor = '#8ab8a8'
+            task.querySelector('button').style.width = 'fit-content'
+            task.querySelector('button').style.height = 'fit-content'
+            task.querySelector('button').style.display = 'flex'
+            task.querySelector('button').style.placeContent = 'center'
+            task.querySelector('button').style.paddingInline = '10px'
+            task.querySelector('button').style.borderRadius = '10px'
+            task.querySelector('button').style.color = 'white'
+            task.querySelector('button').style.cursor = 'pointer'
+            task.querySelector('button').style.visibility = 'hidden'
             task.querySelectorAll('div > span').forEach(item => {
                 item.style.color = '#fdf5bf'
             })
@@ -215,7 +243,19 @@
                 dellist.appendChild(task)
 
             })
-
+            // ------------------edit-----------------------
+            let editBtn = document.querySelector('.editBtn')
+            task.querySelector('input').value = tskInp.value
+            editBtn.addEventListener('click', () => {
+                task.querySelector('input').style.visibility = 'visible'
+                task.querySelector('button').style.visibility = 'visible'
+            })
+            // ------------------check----------------------
+            let c = task.querySelector('.checkmark')
+            c.addEventListener('click', () => {
+                c.innerHTML = `<span class="material-symbols-outlined">check_circle</span>`
+                c.style.color = 'rgb(4, 177, 85)'
+            })
         }
 
     })
