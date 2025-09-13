@@ -108,7 +108,7 @@
         </div>
     </main>
     <!-- ---------------------pop up--------------------------- -->
-    <div class="hidden w-full h-[100vh] myBg absolute top-0 left-0 justify-center items-center z-20">
+    <div id="popup" class="hidden w-full h-[100vh] myBg absolute top-0 left-0 justify-center items-center z-20">
         <figure class="relative w-[400px] h-fit">
             <img class="-z-10 w-[50%] absolute top-[-130px] left-[50%] translate-x-[-50%]"
                 src="assets/img/Project (20250911054929).png" alt="">
@@ -122,8 +122,9 @@
                 <div class="w-full h-fit flex justify-center items-center gap-x-5 *:hover:scale-[1.1] *:duration-300">
                     <a class="w-fit h-fit p-2.5 flex justify-center items-center bg-[#8ab8a8] rounded-[10px] text-white text-[14px]"
                         href="index2.html">Go to favorites</a>
-                    <a class="w-fit h-fit p-2.5 flex justify-center items-center border border-[#8ab8a8] text-[#8ab8a8] rounded-[10px] text-[14px]"
-                        href="index.html">Not now</a>
+                    <button id="popClose"
+                        class="w-fit h-fit p-2.5 flex justify-center items-center border border-[#8ab8a8] text-[#8ab8a8] rounded-[10px] text-[14px]">Not
+                        now</button>
                 </div>
             </div>
         </figure>
@@ -251,25 +252,38 @@
 
             // ------------------delete--------------------
 
+            // ------------------delete--------------------
             let delBtn = task.querySelector('.delBtn')
             let dellist = document.querySelector('#bin>aside>div>ul')
+
             delBtn.addEventListener('click', () => {
                 dellist.appendChild(task)
 
+                delBtn.innerText = 'undo'
+                delBtn.classList.remove('delBtn')
+                delBtn.classList.add('restoreBtn')
+                delBtn.addEventListener('click', () => {
+                    tsklist.appendChild(task)
+                    delBtn.innerText = 'delete'
+                    delBtn.classList.remove('restoreBtn')
+                    delBtn.classList.add('delBtn')
+                })
             })
             // ------------------edit-----------------------
-            let editBtn = document.querySelector('.editBtn')
+            let editBtn = task.querySelector('.editBtn')
             let h5 = task.querySelector('h5')
-            task.querySelector('input').value = tskInp.value
-            innerBtn = task.querySelector('button')
+            let input = task.querySelector('input')
+            let innerBtn = task.querySelector('button')
+
+            input.value = h5.innerText
             editBtn.addEventListener('click', () => {
-                task.querySelector('input').style.visibility = 'visible'
-                task.querySelector('button').style.visibility = 'visible'
-                innerBtn.addEventListener('click', () => {
-                    h5.innerText = task.querySelector('input').value
-                    task.querySelector('input').style.visibility = 'hidden'
-                    task.querySelector('button').style.visibility = 'hidden'
-                })
+                input.style.visibility = 'visible'
+                innerBtn.style.visibility = 'visible'
+                innerBtn.onclick = () => {
+                    h5.innerText = input.value
+                    input.style.visibility = 'hidden'
+                    innerBtn.style.visibility = 'hidden'
+                }
             })
             // ------------------check----------------------
             let c = task.querySelector('.checkmark')
@@ -286,10 +300,34 @@
                     c.dataset.state = 'off'
 
                 }
+                // ------------popup after 3 checks---------------
+                let task3 = document.querySelectorAll('#tsklist>ul>li')
+                let checknum = 0
 
+                task3.forEach((item) => {
+                    let ch = item.querySelector('.checkmark')
+                    if (ch.dataset.state === 'on') {
+                        checknum++
+                    }
+                })
+
+                let pop = document.getElementById('popup')
+                if (checknum === 3) {
+                    setTimeout(() => {
+                        pop.classList.remove('hidden')
+                        pop.classList.add('flex')
+                    }, 1000)
+                } else {
+                    pop.classList.add('hidden')
+                    pop.classList.remove('flex')
+                }
+                let popcls = document.getElementById('popClose')
+                popcls.addEventListener('click', () => {
+                    pop.style.display = 'none'
+                })
             })
-        }
 
+        }
     })
 
     // ------------------search--------------------
