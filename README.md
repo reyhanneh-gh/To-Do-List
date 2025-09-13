@@ -1,4 +1,4 @@
-# ✅ To-Do List – JavaScript Practice Project 🐼
+# 🐼 To-Do List – JavaScript Practice Project ✅
 A dynamic and interactive task management app built with HTML, Tailwind CSS, and JavaScript. This project allows users to add, edit, delete, and restore tasks, with visual feedback and celebratory popups. 🐼 It focuses on practicing DOM manipulation, scoped event handling, and UI logic in pure JavaScript.
 
 ---
