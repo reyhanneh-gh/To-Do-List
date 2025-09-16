@@ -75,7 +75,8 @@
             </li>
         </ul>
     </nav>
-    <main class="w-[95%] md:w-[75%] h-full flex flex-wrap justify-center bg-sky-200 rounded-[10px] relative">
+    <main
+        class="w-[95%] md:w-[75%] h-full flex flex-wrap justify-center bg-sky-200 rounded-[10px] relative overflow-y-scroll">
         <div id="navBtn"
             class="size-[50px] rounded-[10px] favColor1 flex justify-center items-center absolute top-5 left-5 md:hidden cursor-pointer">
             <span class="material-symbols-outlined text-[#8ab8a8] hover:scale-[1.5] duration-500">menu</span>
@@ -83,19 +84,19 @@
         <div
             class="w-full h-fit p-5 flex flex-wrap justify-center items-center mt-[70px] border-b border-b-[#fdf5bf] gap-2.5 md:mt-0">
             <!-- ---------------------task bar--------------------------- -->
-            <input type="text" name="" id="tsk" placeholder="Enter a Task ..."
+            <!-- <input type="text" name="" id="tsk" placeholder="Enter a Task ..."
                 class="w-[70%] md:w-[40%] h-[50px] flex items-center p-2.5 bg-[#ffffff7e] placeholder:text-[#506b61] rounded-[10px]">
             <button id="addtsk"
                 class="size-[50px] flex justify-center items-center favColor1 text-[#8ab8a8] rounded-[10px] *:hover:scale-[1.5] *:duration-300 cursor-pointer"><span
-                    class="material-symbols-outlined">add</span></button>
+                    class="material-symbols-outlined">add</span></button> -->
 
 
             <!-- ---------------------search bar--------------------------- -->
-            <input id="tskSearch" type="text" autocomplete="off" placeholder="Search ..."
+            <!-- <input id="tskSearch" type="text" autocomplete="off" placeholder="Search ..."
                 class="w-[70%] md:w-[40%] h-[50px] flex items-center p-2.5 bg-[#ffffff7e] placeholder:text-[#506b61] rounded-[10px]">
             <button id="searchBtn"
                 class="size-[50px] flex justify-center items-center favColor1 text-[#8ab8a8] rounded-[10px] *:hover:scale-[1.5] *:duration-300 cursor-pointer"><span
-                    class="material-symbols-outlined">search</span></button>
+                    class="material-symbols-outlined">search</span></button> -->
         </div>
         <!-- ---------------------Date--------------------------- -->
         <div class="w-full h-fit flex flex-wrap place-content-center">
@@ -112,78 +113,105 @@
             </thead>
             <tbody>
                 <tr class="border-t border-[#8ab8a8]">
-                    <td class="p-2 border-r border-[#8ab8a8] text-center">Monday</td>
-                    <td class="p-2 hover:bg-[white]">
+                    <td class="p-2 border-r border-[#8ab8a8] text-center">Mon</td>
+                    <td class="p-2 hover:bg-[#ffffff42]">
                         <div
-                            class="tsklist w-full min-h-[70%] max-h-[75%] overflow-y-auto p-5 flex flex-wrap justify-center">
+                            class="tsklist w-full min-h-[70%] max-h-[100%] overflow-y-auto flex flex-wrap justify-center">
                             <ul
-                                class="w-[95%] h-fit flex flex-wrap justify-center *:p-2.5 gap-y-2 *:flex *:items-center *:w-full *:h-fit *:text-gray-700 *:rounded-[10px]">
+                                class="w-[95%] h-fit flex flex-wrap justify-evenly relative *:p-2.5 gap-y-2 *:flex *:items-center *:h-fit *:text-gray-700 *:rounded-[10px] *:bg-[#ffffff7e]">
+                                <button class="add1 w-fit h-full absolute right-0 p-2 favColor1 *:text-[#8ab8a8]">
+                                    <span class="material-symbols-outlined">add</span>
+                                </button>
                             </ul>
                         </div>
                     </td>
                 </tr>
                 <tr class="border-t border-[#8ab8a8]">
-                    <td class="p-2 border-r border-[#8ab8a8] text-center">Tuesday</td>
-                    <td class="p-2 hover:bg-[white]">
+                    <td class="p-2 border-r border-[#8ab8a8] text-center">Tue</td>
+                    <td class="p-2 hover:bg-[#ffffff42]">
                         <div
-                            class="tsklist w-full min-h-[70%] max-h-[75%] overflow-y-auto p-5 flex flex-wrap justify-center">
+                            class="tsklist w-full min-h-[70%] max-h-[100%] overflow-y-auto flex flex-wrap justify-center">
                             <ul
-                                class="w-[95%] h-fit flex flex-wrap justify-center *:p-2.5 gap-y-2 *:flex *:items-center *:w-full *:h-fit *:text-gray-700 *:rounded-[10px]">
+                                class="w-[95%] h-fit flex flex-wrap justify-evenly relative *:p-2.5 gap-y-2 *:flex *:items-center *:h-fit *:text-gray-700 *:rounded-[10px] *:bg-[#ffffff7e]">
+                                <button
+                                    class="add1 w-fit h-full absolute right-0 p-2 facolor1 favColor1 *:text-[#8ab8a8]">
+                                    <span class="material-symbols-outlined">add</span>
+                                </button>
                             </ul>
                         </div>
                     </td>
                 </tr>
                 <tr class="border-t border-[#8ab8a8]">
-                    <td class="p-2 border-r border-[#8ab8a8] text-center">Wednesday</td>
-                    <td class="p-2 hover:bg-[white]">
+                    <td class="p-2 border-r border-[#8ab8a8] text-center">Wed</td>
+                    <td class="p-2 hover:bg-[#ffffff42]">
                         <div
-                            class="tsklist w-full min-h-[70%] max-h-[75%] overflow-y-auto p-5 flex flex-wrap justify-center">
+                            class="tsklist w-full min-h-[70%] max-h-[100%] overflow-y-auto flex flex-wrap justify-center">
                             <ul
-                                class="w-[95%] h-fit flex flex-wrap justify-center *:p-2.5 gap-y-2 *:flex *:items-center *:w-full *:h-fit *:text-gray-700 *:rounded-[10px]">
+                                class="w-[95%] h-fit flex flex-wrap justify-evenly relative *:p-2.5 gap-y-2 *:flex *:items-center *:h-fit *:text-gray-700 *:rounded-[10px] *:bg-[#ffffff7e]">
+                                <button
+                                    class="add1 w-fit h-full absolute right-0 p-2 facolor1 favColor1 *:text-[#8ab8a8]">
+                                    <span class="material-symbols-outlined">add</span>
+                                </button>
                             </ul>
                         </div>
                     </td>
                 </tr>
                 <tr class="border-t border-[#8ab8a8]">
-                    <td class="p-2 border-r border-[#8ab8a8] text-center">Thursday</td>
-                    <td class="p-2 hover:bg-[white]">
+                    <td class="p-2 border-r border-[#8ab8a8] text-center">Thu</td>
+                    <td class="p-2 hover:bg-[#ffffff42]">
                         <div
-                            class="tsklist w-full min-h-[70%] max-h-[75%] overflow-y-auto p-5 flex flex-wrap justify-center">
+                            class="tsklist w-full min-h-[70%] max-h-[100%] overflow-y-auto flex flex-wrap justify-center">
                             <ul
-                                class="w-[95%] h-fit flex flex-wrap justify-center *:p-2.5 gap-y-2 *:flex *:items-center *:w-full *:h-fit *:text-gray-700 *:rounded-[10px]">
+                                class="w-[95%] h-fit flex flex-wrap justify-evenly relative *:p-2.5 gap-y-2 *:flex *:items-center *:h-fit *:text-gray-700 *:rounded-[10px] *:bg-[#ffffff7e]">
+                                <button
+                                    class="add1 w-fit h-full absolute right-0 p-2 facolor1 favColor1 *:text-[#8ab8a8]">
+                                    <span class="material-symbols-outlined">add</span>
+                                </button>
                             </ul>
                         </div>
                     </td>
                 </tr>
                 <tr class="border-t border-[#8ab8a8]">
-                    <td class="p-2 border-r border-[#8ab8a8] text-center">Friday</td>
-                    <td class="p-2 hover:bg-[white]">
+                    <td class="p-2 border-r border-[#8ab8a8] text-center">Fri</td>
+                    <td class="p-2 hover:bg-[#ffffff42]">
                         <div
-                            class="tsklist w-full min-h-[70%] max-h-[75%] overflow-y-auto p-5 flex flex-wrap justify-center">
+                            class="tsklist w-full min-h-[70%] max-h-[100%] overflow-y-auto flex flex-wrap justify-center">
                             <ul
-                                class="w-[95%] h-fit flex flex-wrap justify-center *:p-2.5 gap-y-2 *:flex *:items-center *:w-full *:h-fit *:text-gray-700 *:rounded-[10px]">
+                                class="w-[95%] h-fit flex flex-wrap justify-evenly relative *:p-2.5 gap-y-2 *:flex *:items-center *:h-fit *:text-gray-700 *:rounded-[10px] *:bg-[#ffffff7e]">
+                                <button
+                                    class="add1 w-fit h-full absolute right-0 p-2 facolor1 favColor1 *:text-[#8ab8a8]">
+                                    <span class="material-symbols-outlined">add</span>
+                                </button>
                             </ul>
                         </div>
                     </td>
                 </tr>
                 <tr class="border-t border-[#8ab8a8]">
-                    <td class="p-2 border-r border-[#8ab8a8] text-center">Saturday</td>
-                    <td class="p-2 hover:bg-[white]">
+                    <td class="p-2 border-r border-[#8ab8a8] text-center">Sat</td>
+                    <td class="p-2 hover:bg-[#ffffff42]">
                         <div
-                            class="tsklist w-full min-h-[70%] max-h-[75%] overflow-y-auto p-5 flex flex-wrap justify-center">
+                            class="tsklist w-full min-h-[70%] max-h-[100%] overflow-y-auto flex flex-wrap justify-center">
                             <ul
-                                class="w-[95%] h-fit flex flex-wrap justify-center *:p-2.5 gap-y-2 *:flex *:items-center *:w-full *:h-fit *:text-gray-700 *:rounded-[10px]">
+                                class="w-[95%] h-fit flex flex-wrap justify-evenly relative *:p-2.5 gap-y-2 *:flex *:items-center *:h-fit *:text-gray-700 *:rounded-[10px] *:bg-[#ffffff7e]">
+                                <button
+                                    class="add1 w-fit h-full absolute right-0 p-2 facolor1 favColor1 *:text-[#8ab8a8]">
+                                    <span class="material-symbols-outlined">add</span>
+                                </button>
                             </ul>
                         </div>
                     </td>
                 </tr>
                 <tr class="border-t border-[#8ab8a8]">
-                    <td class="p-2 border-r border-[#8ab8a8] text-center">Sunday</td>
-                    <td class="p-2 hover:bg-[white]">
+                    <td class="p-2 border-r border-[#8ab8a8] text-center">Sun</td>
+                    <td class="p-2 hover:bg-[#ffffff42]">
                         <div
-                            class="tsklist w-full min-h-[70%] max-h-[100%] overflow-y-auto p-5 flex flex-wrap justify-center">
+                            class="tsklist w-full min-h-[70%] max-h-[100%] overflow-y-auto flex flex-wrap justify-center">
                             <ul
-                                class="w-[95%] h-fit flex flex-wrap justify-center *:p-2.5 gap-y-2 *:flex *:items-center *:w-full *:h-fit *:text-gray-700 *:rounded-[10px]">
+                                class="w-[95%] h-fit flex flex-wrap justify-evenly relative *:p-2.5 gap-y-2 *:flex *:items-center *:h-fit *:text-gray-700 *:rounded-[10px] *:bg-[#ffffff7e]">
+                                <button
+                                    class="add1 w-fit h-full absolute right-0 p-2 facolor1 favColor1 *:text-[#8ab8a8]">
+                                    <span class="material-symbols-outlined">add</span>
+                                </button>
                             </ul>
                         </div>
                     </td>
@@ -257,45 +285,62 @@
         _binclose.style.transition = '1s'
         _binclose.style.cursor = 'pointer'
     })
-    // -------------------date--------------------
-    // let today = new Date()
-    // let _week = today.getDay
-    // let monthName = ["January", "February", "March", "April", "May", "June",
-    //     "July", "August", "September", "October", "November", "December"
-    // ]
-    // let _month = monthName[today.getMonth()]
-    // document.getElementById('date').innerHTML = _month
 
     // ------------------to do--------------------
-    let tskInp = document.getElementById('tsk')
-    let tskBtn = document.getElementById('addtsk')
     let tsklist = document.querySelectorAll('.tsklist>ul')
-    tsklist.forEach((val) => {
-        val.addEventListener('click', () => {
+    let tskInp = document.createElement('input')
+    let tskBtn = document.createElement('button')
+    let add1 = document.querySelectorAll('.add1')
+    tskInp.style.display = 'none'
+    tskBtn.style.display = 'none'
+    add1.forEach((clck, index) => {
+        clck.addEventListener('click', () => {
+            const tskInp = document.createElement('input')
+            const tskBtn = document.createElement('button')
 
+            tskInp.style.display = 'flex'
+            tskBtn.style.display = 'flex'
+            clck.style.display = 'none'
+
+            const val = tsklist[index]
+
+            tskInp.placeholder = 'Enter a Task...'
+            tskInp.style.width = '70%'
+            tskBtn.innerText = 'Done'
+            tskBtn.style.width = 'fit-content'
+            tskBtn.style.backgroundColor = '#8ab8a8'
+            tskBtn.style.cursor = 'pointer'
+
+            val.appendChild(tskInp)
+            val.appendChild(tskBtn)
 
             tskBtn.addEventListener('click', () => {
                 let tsk = tskInp.value
                 if (tsk === "") {
                     alert('please enter a task!')
                 } else {
-                    addtsk(tsk)
+                    addtsk(tsk, val)
                     tskInp.value = ""
                     tskInp.focus()
+                    tskInp.style.display = 'none'
+                    tskBtn.style.display = 'none'
+                    clck.style.display = 'flex'
                 }
-                function addtsk(tsk) {
-                    let task = document.createElement('li')
+
+                function addtsk(tsk, val) {
+                    let task = document.createElement('li');
                     task.classList.add('task')
-                    task.innerHTML =
-                        ` <h5>${tsk}</h5>
-                <input id="editInp" type="text">
-                <button class"ebtn">Edit</button>
-                <div>
-                <span data-state='off' class="material-symbols-outlined checkmark">circle</span>
-                <span class="material-symbols-outlined editBtn">edit_document</span>
-                <span class="material-symbols-outlined delBtn">delete</span> 
-                </div>
-                `
+                    task.style.width = '80%'
+                    task.innerHTML = `
+        <h5>${tsk}</h5>
+        <input id="editInp" type="text">
+        <button class="ebtn">Edit</button>
+        <div>
+            <span data-state='off' class="material-symbols-outlined checkmark">circle</span>
+            <span class="material-symbols-outlined editBtn">edit_document</span>
+            <span class="material-symbols-outlined delBtn">delete</span> 
+        </div>
+    `
 
                     task.style.display = 'flex'
                     task.style.alignItems = 'center'
@@ -329,13 +374,13 @@
                     task.querySelector('button').style.cursor = 'pointer'
                     task.querySelector('button').style.visibility = 'hidden'
                     task.querySelectorAll('div > span').forEach(item => {
-                        item.style.color = '#fdf5bf'
+                        item.style.color = '#8ab8a8'
                     })
                     task.querySelectorAll('div > span').forEach(item => {
                         item.style.cursor = 'pointer'
                     })
 
-                    tsklist.appendChild(task)
+                    val.appendChild(task)
 
                     // ------------------delete--------------------
 
@@ -377,30 +422,10 @@
 
                     })
                 }
-
             })
         })
     })
 
-    // ------------------search--------------------
-
-    tskSearch.addEventListener('keyup', (e) => {
-        let searchVal = e.target.value
-        let tempH5 = document.querySelectorAll('.task>h5')
-        tempH5.forEach((val) => {
-            if (val.innerText.indexOf(searchVal) >= 0) {
-                val.parentElement.style.display = 'flex'
-
-            } else if (val.innerText === '') {
-                val.parentElement.style.display = 'none'
-            }
-            else {
-                val.parentElement.style.display = 'none'
-
-            }
-        })
-
-    })
 
 </script>
 
