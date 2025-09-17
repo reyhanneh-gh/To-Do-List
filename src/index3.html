@@ -28,21 +28,47 @@
                 <a href="index.html"><span class="material-symbols-outlined pr-2 text-[#8ab8a8]">today</span>Home</a>
             </li>
             <li
-                class="w-full h-fit flex justify-center items-center *:p-2.5 border-b border-b-[#8ab8a8] *:w-full *:h-full *:flex *:items-center *:hover:bg-[rgba(138,184,168,0.3)] *:duration-500 text-gray-700">
-                <a href="index2.html"><span
-                        class="material-symbols-outlined pr-2 text-[#8ab8a8]">favorite</span>Favorites</a>
+                class="favPg w-full h-fit flex justify-center items-center *:p-2.5 border-b border-b-[#8ab8a8] *:w-full *:h-full *:flex *:items-center *:hover:bg-[rgba(138,184,168,0.3)] *:duration-500 text-gray-700">
+                <span class="cursor-pointer"><span
+                        class="material-symbols-outlined pr-2 text-[#8ab8a8]">favorite</span>Favorites</span>
             </li>
             <li
                 class="w-full h-fit flex justify-center items-center *:p-2.5 border-b border-b-[#8ab8a8] *:w-full *:h-full *:flex *:items-center *:hover:bg-[rgba(138,184,168,0.3)] *:duration-500 text-gray-700">
-                <a href="#"><span class="material-symbols-outlined pr-2 text-[#8ab8a8]">date_range</span>Weekly
-                    Planner</a>
+                <a href="#"><span
+                        class="material-symbols-outlined pr-2 text-[#8ab8a8]">date_range</span>Weekly Planner</a>
             </li>
             <li
                 class="trash w-full h-fit flex justify-center items-center *:p-2.5 *:w-full *:h-full *:flex *:items-center *:hover:bg-[rgba(138,184,168,0.3)] *:duration-500 text-gray-700">
                 <span class="cursor-pointer">
-                    <span class="material-symbols-outlined pr-2 text-[#8ab8a8]">delete</span>Trash
-                </span>
+                    <span class="material-symbols-outlined pr-2 text-[#8ab8a8]">delete</span>Trash</span>
 
+            </li>
+        </ul>
+    </nav>
+    <!-- ---------------menu in larger screen version----------------- -->
+    <nav class="hidden md:flex w-[20%] h-full flex-wrap justify-center items-center favColor1 rounded-[10px] relative">
+        <figure class="w-full h-fit absolute top-0 left-0">
+            <img class="object-cover" src="assets/img/Project (20250911072123).png" alt="">
+        </figure>
+        <ul class="w-full h-fit flex flex-wrap justify-center items-center px-2.5">
+            <li
+                class="w-full h-fit flex justify-center items-center *:p-2.5 border-b border-b-[#8ab8a8] *:w-full *:h-full *:flex *:items-center *:hover:bg-[rgba(138,184,168,0.3)] *:duration-500 text-gray-700">
+                <a href="index.html"><span class="material-symbols-outlined pr-2 text-[#8ab8a8]">home</span>Home</a>
+            </li>
+            <li
+                class="favPg w-full h-fit flex justify-center items-center *:p-2.5 border-b border-b-[#8ab8a8] *:w-full *:h-full *:flex *:items-center *:hover:bg-[rgba(138,184,168,0.3)] *:duration-500 text-gray-700">
+                <span class="cursor-pointer">
+                    <span class="material-symbols-outlined pr-2 text-[#8ab8a8]">favorite</span>Favorites</span>
+            </li>
+            <li
+                class="w-full h-fit flex justify-center items-center *:p-2.5 border-b border-b-[#8ab8a8] *:w-full *:h-full *:flex *:items-center *:hover:bg-[rgba(138,184,168,0.3)] *:duration-500 text-gray-700">
+                <a href="#"><span
+                        class="material-symbols-outlined pr-2 text-[#8ab8a8]">date_range</span>Weekly Planner</a>
+            </li>
+            <li
+                class="trash w-full h-fit flex justify-center items-center *:p-2.5 *:w-full *:h-full *:flex *:items-center *:hover:bg-[rgba(138,184,168,0.3)] *:duration-500 text-gray-700">
+                <span class="cursor-pointer">
+                    <span class="material-symbols-outlined pr-2 text-[#8ab8a8]">delete</span>Trash</span>
             </li>
         </ul>
     </nav>
@@ -222,6 +248,106 @@
             </div>
         </aside>
     </div>
+    <!-- ////////////////////////////////////////////////////////////////// -->
+    <!-- ------------------------favorite page----------------------------- -->
+    <section id="favPage" class="w-full h-[100vh] flex justify-evenly items-center favFont absolute top-0 left-0 py-5">
+        <!-- -------------------menu mobile version----------------------- -->
+        <nav id="nav" class="md:hidden absolute z-10 top-0 -left-[400px] flex w-1/2 h-full flex-wrap justify-center items-center favColor1
+        rounded-[10px]">
+            <figure class="w-full h-fit absolute top-0 left-0">
+                <img class="object-cover" src="assets/img/Project (20250911072123).png" alt="">
+            </figure>
+            <span id="closeBtn"
+                class="material-symbols-outlined absolute top-5 right-5 text-[#8ab8a8] hover:scale-[1.5] cursor-pointer duration-500">close</span>
+            <ul class="w-full h-fit flex flex-wrap justify-center items-center px-2.5">
+                <li
+                    class="w-full h-fit flex justify-center items-center *:p-2.5 border-b border-b-[#8ab8a8] *:w-full *:h-full *:flex *:items-center *:hover:bg-[rgba(138,184,168,0.3)] *:duration-500 text-gray-700">
+                    <a href="index.html"><span
+                            class="material-symbols-outlined pr-2 text-[#8ab8a8]">today</span>Home</a>
+                </li>
+                <li
+                    class="w-full h-fit flex justify-center items-center *:p-2.5 border-b border-b-[#8ab8a8] *:w-full *:h-full *:flex *:items-center *:hover:bg-[rgba(138,184,168,0.3)] *:duration-500 text-gray-700">
+                    <a href="#"><span class="material-symbols-outlined pr-2 text-[#8ab8a8]">favorite</span>Favorites</a>
+                </li>
+                <li
+                    class="w-full h-fit flex justify-center items-center *:p-2.5 border-b border-b-[#8ab8a8] *:w-full *:h-full *:flex *:items-center *:hover:bg-[rgba(138,184,168,0.3)] *:duration-500 text-gray-700">
+                    <a href="index3.html"><span
+                            class="material-symbols-outlined pr-2 text-[#8ab8a8]">date_range</span>Weekly Planner</a>
+                </li>
+                <li
+                    class="trash w-full h-fit flex justify-center items-center *:p-2.5 *:w-full *:h-full *:flex *:items-center *:hover:bg-[rgba(138,184,168,0.3)] *:duration-500 text-gray-700">
+                    <span class="cursor-pointer">
+                        <span class="material-symbols-outlined pr-2 text-[#8ab8a8]">delete</span>Trash
+                    </span>
+
+                </li>
+            </ul>
+        </nav>
+        <!-- ---------------menu in larger screen version----------------- -->
+        <nav
+            class="hidden md:flex w-[20%] h-full flex-wrap justify-center items-center favColor1 rounded-[10px] relative">
+            <figure class="w-full h-fit absolute top-0 left-0">
+                <img class="object-cover" src="assets/img/Project (20250911072123).png" alt="">
+            </figure>
+            <ul class="w-full h-fit flex flex-wrap justify-center items-center px-2.5">
+                <li
+                    class="w-full h-fit flex justify-center items-center *:p-2.5 border-b border-b-[#8ab8a8] *:w-full *:h-full *:flex *:items-center *:hover:bg-[rgba(138,184,168,0.3)] *:duration-500 text-gray-700">
+                    <a href="index.html"><span class="material-symbols-outlined pr-2 text-[#8ab8a8]">home</span>Home</a>
+                </li>
+                <li
+                    class="w-full h-fit flex justify-center items-center *:p-2.5 border-b border-b-[#8ab8a8] *:w-full *:h-full *:flex *:items-center *:hover:bg-[rgba(138,184,168,0.3)] *:duration-500 text-gray-700">
+                    <a href="#"><span class="material-symbols-outlined pr-2 text-[#8ab8a8]">favorite</span>Favorites</a>
+                </li>
+                <li
+                    class="w-full h-fit flex justify-center items-center *:p-2.5 border-b border-b-[#8ab8a8] *:w-full *:h-full *:flex *:items-center *:hover:bg-[rgba(138,184,168,0.3)] *:duration-500 text-gray-700">
+                    <a href="index3.html"><span
+                            class="material-symbols-outlined pr-2 text-[#8ab8a8]">date_range</span>Weekly Planner</a>
+                </li>
+                <li
+                    class="trash w-full h-fit flex justify-center items-center *:p-2.5 *:w-full *:h-full *:flex *:items-center *:hover:bg-[rgba(138,184,168,0.3)] *:duration-500 text-gray-700">
+                    <span class="cursor-pointer">
+                        <span class="material-symbols-outlined pr-2 text-[#8ab8a8]">delete</span>Trash
+                    </span>
+                </li>
+            </ul>
+        </nav>
+        <main class="w-[95%] md:w-[75%] h-full flex flex-wrap justify-center bg-orange-300 rounded-[10px] relative">
+            <div id="navBtn"
+                class="size-[50px] rounded-[10px] favColor2 flex justify-center items-center absolute top-5 left-5 md:hidden cursor-pointer">
+                <span class="material-symbols-outlined text-[#fdf5bf] hover:scale-[1.5] duration-500">menu</span>
+            </div>
+            <div
+                class="w-full h-fit p-5 flex flex-wrap justify-center items-center my-[70px] border-b border-b-[#fdf5bf] gap-2.5 md:mt-0">
+                <!-- ---------------------task bar--------------------------- -->
+                <input type="text" name="" id="tsk" placeholder="Enter a Task ..."
+                    class="w-[70%] md:w-[40%] h-[50px] flex items-center p-2.5 bg-[#ffffff7e] placeholder:text-[#506b61] rounded-[10px]">
+                <button id="addtsk"
+                    class="size-[50px] flex justify-center items-center favColor2 text-[#fdf5bf] rounded-[10px] *:hover:scale-[1.5] *:duration-300 cursor-pointer"><span
+                        class="material-symbols-outlined">add</span></button>
+
+
+                <!-- ---------------------search bar--------------------------- -->
+                <input id="tskSearch" type="text" autocomplete="off" placeholder="Search ..."
+                    class="w-[70%] md:w-[40%] h-[50px] flex items-center p-2.5 bg-[#ffffff7e] placeholder:text-[#506b61] rounded-[10px]">
+                <button id="searchBtn"
+                    class="size-[50px] flex justify-center items-center favColor2 text-[#fdf5bf] rounded-[10px] *:hover:scale-[1.5] *:duration-300 cursor-pointer"><span
+                        class="material-symbols-outlined">search</span></button>
+
+                <!-- ---------------------header--------------------------- -->
+                <figure class="w-[100px] h-fit animate-bounce mt-5">
+                    <img class="object-cover" src="assets/img/Project (20250913014437).png" alt="">
+                </figure>
+                <figcaption class="w-full h-fit text-center text-[16px] text-green-900">Here you can add your favorite
+                    activities or hobbies. <br>Complete three main tasks and reward yourself with a bonus!</figcaption>
+            </div>
+            <!-- ---------------------task list--------------------------- -->
+            <div id="tsklist" class="w-full min-h-[70%] max-h-[75%] overflow-y-auto p-5 flex flex-wrap justify-center">
+                <ul
+                    class="w-[95%] h-fit flex flex-wrap justify-center *:p-2.5 gap-y-2 *:flex *:items-center *:w-full *:h-fit *:bg-[#ffffff3b] *:text-gray-700 *:rounded-[10px]">
+                </ul>
+            </div>
+        </main>
+    </section>
 </body>
 <script>
     // ---------------toggle menu-----------------
@@ -254,6 +380,15 @@
         _binclose.style.transform = 'rotate(180deg)'
         _binclose.style.transition = '1s'
         _binclose.style.cursor = 'pointer'
+    })
+    // -------------------favorite page--------------------
+    let f = document.querySelectorAll('.favPg')
+    let _fav = document.getElementById('favPage')
+    _fav.style.display = 'none'
+    f.forEach(item => {
+        item.addEventListener('click', () => {
+            _fav.style.display = 'flex'
+        })
     })
 
     // ------------------to do--------------------
