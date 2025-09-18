@@ -275,7 +275,6 @@
     })
     // -------------------favorite page--------------------
     let f = document.querySelectorAll('.favPg')
-    // let _binclose = document.getElementById('bincls')
     let _fav = document.getElementById('favPage')
     _fav.style.display = 'none'
     f.forEach(item => {
@@ -286,11 +285,13 @@
     // -------------------date--------------------
     let today = new Date()
     let _day = today.getDate()
-    let monthName = ["January", "February", "March", "April", "May", "June",
-        "July", "August", "September", "October", "November", "December"
-    ]
+    let monthName = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+        "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
     let _month = monthName[today.getMonth()]
-    document.getElementById('date').innerHTML = _month + "  " + _day
+    let weekdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+    let wday = weekdays[today.getDay() - 1]
+    document.getElementById('date').innerHTML = wday + " - " + _month + "  " + _day
+
 
     // ------------------to do--------------------
     let tskInp = document.getElementById('tsk')
@@ -358,8 +359,6 @@
             })
 
             tsklist.appendChild(task)
-
-            // ------------------delete--------------------
 
             // ------------------delete--------------------
             let delBtn = task.querySelector('.delBtn')
