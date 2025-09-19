@@ -322,7 +322,6 @@
         // ------------------check----------------------
         let c = task.querySelector('.checkmark')
 
-        // if this task is in completedTasks (from localStorage), mark it right away
         if (Ctask.includes(tsk)) {
             c.innerHTML = `<span class="material-symbols-outlined">check_circle</span>`
             c.style.color = 'rgb(4, 177, 85)'
@@ -332,7 +331,6 @@
 
         c.addEventListener('click', () => {
             if (c.dataset.state === 'off') {
-                // mark as completed
                 if (!Ctask.includes(task.querySelector('h5').innerText)) {
                     Ctask.push(task.querySelector('h5').innerText)
                 }
@@ -342,13 +340,10 @@
                 h5.innerHTML = `<del>${h5.innerText}</del>`
                 c.dataset.state = 'on'
             } else {
-                // unmark as completed
                 c.innerHTML = `<span class="material-symbols-outlined">circle</span>`
                 c.style.color = 'rgb(253, 245, 191)'
                 h5.innerHTML = h5.innerText
                 c.dataset.state = 'off'
-
-                // remove from completedTasks in localStorage
                 Ctask = Ctask.filter(item => item !== task.querySelector('h5').innerText)
                 localStorage.setItem('completedTasks', JSON.stringify(Ctask))
             }
