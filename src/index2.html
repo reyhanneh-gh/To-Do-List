@@ -17,7 +17,7 @@
     <!-- -------------------menu mobile version----------------------- -->
     <nav id="nav" class="md:hidden absolute z-10 top-0 -left-[400px] flex w-1/2 h-full flex-wrap justify-center items-center favColor1
         rounded-[10px]">
-        <figure class="w-full h-fit absolute top-0 left-0">
+        <figure class="w-full h-fit absolute top-[30px] left-0">
             <img class="object-cover" src="assets/img/Project (20250911072123).png" alt="">
         </figure>
         <span id="closeBtn"
@@ -37,17 +37,20 @@
                         class="material-symbols-outlined pr-2 text-[#8ab8a8]">date_range</span>Weekly Planner</a>
             </li>
             <li
-                class="trash w-full h-fit flex justify-center items-center *:p-2.5 *:w-full *:h-full *:flex *:items-center *:hover:bg-[rgba(138,184,168,0.3)] *:duration-500 text-gray-700">
+                class="trash w-full h-fit flex justify-center items-center *:p-2.5 border-b border-b-[#8ab8a8] *:w-full *:h-full *:flex *:items-center *:hover:bg-[rgba(138,184,168,0.3)] *:duration-500 text-gray-700">
                 <span class="cursor-pointer">
                     <span class="material-symbols-outlined pr-2 text-[#8ab8a8]">delete</span>Trash
                 </span>
-
+            </li>
+            <li
+                class="w-full h-fit flex justify-center items-center *:p-2.5 *:w-full *:h-full *:flex *:items-center *:hover:bg-[rgba(138,184,168,0.3)] *:duration-500 text-gray-700">
+                <a href=""><span class="material-symbols-outlined pr-2 text-[#8ab8a8]">person</span></span>Contact</a>
             </li>
         </ul>
     </nav>
     <!-- ---------------menu in larger screen version----------------- -->
     <nav class="hidden md:flex w-[20%] h-full flex-wrap justify-center items-center favColor1 rounded-[10px] relative">
-        <figure class="w-full h-fit absolute top-0 left-0">
+        <figure class="w-full h-fit absolute top-[30px] left-0">
             <img class="object-cover" src="assets/img/Project (20250911072123).png" alt="">
         </figure>
         <ul class="w-full h-fit flex flex-wrap justify-center items-center px-2.5">
@@ -65,14 +68,18 @@
                         class="material-symbols-outlined pr-2 text-[#8ab8a8]">date_range</span>Weekly Planner</a>
             </li>
             <li
-                class="trash w-full h-fit flex justify-center items-center *:p-2.5 *:w-full *:h-full *:flex *:items-center *:hover:bg-[rgba(138,184,168,0.3)] *:duration-500 text-gray-700">
+                class="trash w-full h-fit flex justify-center items-center *:p-2.5 border-b border-b-[#8ab8a8] *:w-full *:h-full *:flex *:items-center *:hover:bg-[rgba(138,184,168,0.3)] *:duration-500 text-gray-700">
                 <span class="cursor-pointer">
                     <span class="material-symbols-outlined pr-2 text-[#8ab8a8]">delete</span>Trash
                 </span>
             </li>
+            <li
+                class="w-full h-fit flex justify-center items-center *:p-2.5 *:w-full *:h-full *:flex *:items-center *:hover:bg-[rgba(138,184,168,0.3)] *:duration-500 text-gray-700">
+                <a href=""><span class="material-symbols-outlined pr-2 text-[#8ab8a8]">person</span></span>Contact</a>
+            </li>
         </ul>
     </nav>
-    <main class="w-[95%] md:w-[75%] h-full flex flex-wrap justify-center bg-orange-300 rounded-[10px] relative">
+    <main class="w-[95%] md:w-[75%] h-full flex flex-wrap justify-center bg-orange-300 rounded-[10px] overflow-y-scroll relative">
         <div id="navBtn"
             class="size-[50px] rounded-[10px] favColor2 flex justify-center items-center absolute top-5 left-5 md:hidden cursor-pointer">
             <span class="material-symbols-outlined text-[#fdf5bf] hover:scale-[1.5] duration-500">menu</span>
