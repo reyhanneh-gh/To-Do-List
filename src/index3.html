@@ -45,7 +45,7 @@
             </li>
             <li
                 class="w-full h-fit flex justify-center items-center *:p-2.5 *:w-full *:h-full *:flex *:items-center *:hover:bg-[rgba(138,184,168,0.3)] *:duration-500 text-gray-700">
-                <a href=""><span class="material-symbols-outlined pr-2 text-[#8ab8a8]">person</span></span>Contact</a>
+                <a href="index4.html"><span class="material-symbols-outlined pr-2 text-[#8ab8a8]">person</span></span>Contact</a>
             </li>
         </ul>
     </nav>
@@ -77,7 +77,7 @@
             </li>
             <li
                 class="w-full h-fit flex justify-center items-center *:p-2.5 *:w-full *:h-full *:flex *:items-center *:hover:bg-[rgba(138,184,168,0.3)] *:duration-500 text-gray-700">
-                <a href=""><span class="material-symbols-outlined pr-2 text-[#8ab8a8]">person</span></span>Contact</a>
+                <a href="index4.html"><span class="material-symbols-outlined pr-2 text-[#8ab8a8]">person</span></span>Contact</a>
             </li>
         </ul>
     </nav>
@@ -265,12 +265,9 @@
     // ------------------to do--------------------
     let tsklist = document.querySelectorAll('.tsklist>ul')
     let add1 = document.querySelectorAll('.add1')
-
-    // localStorage
     let _weekDatabase = []
     let weekDeletedTasks = []
     let weekCompletedTasks = []
-
     let weekStorage = JSON.parse(localStorage.getItem('weekTask'))
     let weekDeletedStorage = JSON.parse(localStorage.getItem('weekDeletedTasks'))
     let weekCompletedStorage = JSON.parse(localStorage.getItem('weekCompletedTasks'))
@@ -285,7 +282,6 @@
         weekCompletedTasks = [...weekCompletedStorage]
     }
 
-    // restore tasks
     _weekDatabase.map((obj) => {
         addtsk(obj.text, tsklist[obj.day], obj.day)
     })

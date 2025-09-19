@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style/master.css">
+    <link rel="stylesheet" href="style/output.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Signika+Negative:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="../src/assets/css/fontello.css">
+</head>
+
+<body class="w-full h-[100vh] flex justify-evenly items-center favFont relative py-5">
+    <!-- -------------------menu mobile version----------------------- -->
+    <nav id="nav" class="md:hidden absolute z-10 top-0 -left-[400px] flex w-1/2 h-full flex-wrap justify-center items-center favColor1
+        rounded-[10px]">
+        <figure class="w-full h-fit absolute top-[30px] left-0">
+            <img class="object-cover" src="assets/img/Project (20250911072123).png" alt="">
+        </figure>
+        <span id="closeBtn"
+            class="material-symbols-outlined absolute top-5 right-5 text-[#8ab8a8] hover:scale-[1.5] cursor-pointer duration-500">close</span>
+        <ul class="w-full h-fit flex flex-wrap justify-center items-center px-2.5">
+            <li
+                class="w-full h-fit flex justify-center items-center *:p-2.5 border-b border-b-[#8ab8a8] *:w-full *:h-full *:flex *:items-center *:hover:bg-[rgba(138,184,168,0.3)] *:duration-500 text-gray-700">
+                <a href="index.html"><span class="material-symbols-outlined pr-2 text-[#8ab8a8]">today</span>Home</a>
+            </li>
+            <li
+                class="favPg w-full h-fit flex justify-center items-center *:p-2.5 border-b border-b-[#8ab8a8] *:w-full *:h-full *:flex *:items-center *:hover:bg-[rgba(138,184,168,0.3)] *:duration-500 text-gray-700">
+                <a href="index2.html"><span
+                        class="material-symbols-outlined pr-2 text-[#8ab8a8]">favorite</span>Favorites</a>
+            </li>
+            <li
+                class="w-full h-fit flex justify-center items-center *:p-2.5 border-b border-b-[#8ab8a8] *:w-full *:h-full *:flex *:items-center *:hover:bg-[rgba(138,184,168,0.3)] *:duration-500 text-gray-700">
+                <a href="index3.html"><span
+                        class="material-symbols-outlined pr-2 text-[#8ab8a8]">date_range</span>Weekly Planner</a>
+            </li>
+            <li
+                class="w-full h-fit flex justify-center items-center *:p-2.5 *:w-full *:h-full *:flex *:items-center *:hover:bg-[rgba(138,184,168,0.3)] *:duration-500 text-gray-700">
+                <a href=""><span class="material-symbols-outlined pr-2 text-[#8ab8a8]">person</span></span>Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- ---------------menu in larger screen version----------------- -->
+    <nav class="hidden md:flex w-[20%] h-full flex-wrap justify-center items-center favColor1 rounded-[10px] relative">
+        <figure class="w-full h-fit absolute top-[30px] left-0">
+            <img class="object-cover" src="assets/img/Project (20250911072123).png" alt="">
+        </figure>
+        <ul class="w-full h-fit flex flex-wrap justify-center items-center px-2.5">
+            <li
+                class="w-full h-fit flex justify-center items-center *:p-2.5 border-b border-b-[#8ab8a8] *:w-full *:h-full *:flex *:items-center *:hover:bg-[rgba(138,184,168,0.3)] *:duration-500 text-gray-700">
+                <a href="index.html"><span class="material-symbols-outlined pr-2 text-[#8ab8a8]">home</span>Home</a>
+            </li>
+            <li
+                class="favPg w-full h-fit flex justify-center items-center *:p-2.5 border-b border-b-[#8ab8a8] *:w-full *:h-full *:flex *:items-center *:hover:bg-[rgba(138,184,168,0.3)] *:duration-500 text-gray-700">
+                <a href="index2.html">
+                    <span class="material-symbols-outlined pr-2 text-[#8ab8a8]">favorite</span>Favorites</a>
+            </li>
+            <li
+                class="w-full h-fit flex justify-center items-center *:p-2.5 border-b border-b-[#8ab8a8] *:w-full *:h-full *:flex *:items-center *:hover:bg-[rgba(138,184,168,0.3)] *:duration-500 text-gray-700">
+                <a href="index3.html"><span
+                        class="material-symbols-outlined pr-2 text-[#8ab8a8]">date_range</span>Weekly Planner</a>
+            </li>
+            <li
+                class="w-full h-fit flex justify-center items-center *:p-2.5 *:w-full *:h-full *:flex *:items-center *:hover:bg-[rgba(138,184,168,0.3)] *:duration-500 text-gray-700">
+                <a href="#"><span class="material-symbols-outlined pr-2 text-[#8ab8a8]">person</span></span>Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <main
+        class="w-[95%] md:w-[75%] h-full flex flex-wrap justify-center items-center bg-violet-200 rounded-[10px] relative">
+        <div id="navBtn"
+            class="size-[50px] rounded-[10px] favColor1 flex justify-center items-center absolute top-5 left-5 md:hidden cursor-pointer">
+            <span class="material-symbols-outlined text-[#8ab8a8] hover:scale-[1.5] duration-500">menu</span>
+        </div>
+        <div class="relative size-[280px] flex justify-center items-center">
+            <figure class="size-[280px] rounded-full border-[10px] border-violet-200 absolute top-[-20%] z-50">
+                <img class="w-full rounded-full object-cover border-[5px] border-[#8ab8a8]"
+                    src="../src/assets/img/IMG_20250601_000653_953.webp" alt="">
+            </figure>
+            <figcaption
+                class="absolute top-[70%] left-[50%] translate-x-[-50%] favColor1 rounded-[10px] w-[380px] h-[150px] z-10 pt-10 flex flex-wrap place-content-center text-gray-400">
+                Developed & Designed By:
+                <h2 class="text-center text-[30px] w-[85%] text-[#8ab8a8] border-b-2 border-b-violet-300">Reyhaneh
+                    Ghalambor</h2>
+                <ul class="w-[90%] h-fit flex justify-evenly items-center">
+                    <li><a class=" text-[#8ab8a8] hover:text-violet-300 duration-300 text-[30px] icon-github-circled-alt2"
+                            href="https://github.com/reyhanneh-gh"></a></li>
+                    <li><a class=" text-[#8ab8a8] hover:text-violet-300 duration-300 text-[30px] icon-instagram"
+                            href="https://www.instagram.com/reyhaneh.alt/"></a></li>
+                    <li><a class=" text-[#8ab8a8] hover:text-violet-300 duration-300 text-[30px] icon-linkedin-circled"
+                            href="www.linkedin.com/in/reyhaneh-ghalambor-76a889368"></a></li>
+                </ul>
+            </figcaption>
+        </div>
+</body>
+<script>
+    // ---------------toggle menu-----------------
+    let n = document.getElementById('navBtn')
+    let _close = document.getElementById('closeBtn')
+    let _nav = document.getElementById('nav')
+    n.addEventListener('click', () => {
+        _nav.style.left = '0px'
+        _nav.style.transition = '1s'
+    })
+    _close.addEventListener('click', () => {
+        _nav.style.left = '-400px'
+        _close.style.transform = 'rotate(180deg)'
+        _close.style.transition = '1s'
+        _nav.style.transition = '1s'
+    })
+    // -------------------trash--------------------
+    let t = document.querySelectorAll('.trash')
+    let _binclose = document.getElementById('bincls')
+    let _bin = document.getElementById('bin')
+    _bin.style.display = 'none'
+    t.forEach(item => {
+        item.addEventListener('click', () => {
+            _bin.style.display = 'flex'
+        })
+    })
+
+    _binclose.addEventListener('click', () => {
+        _bin.style.display = 'none'
+        _binclose.style.transform = 'rotate(180deg)'
+        _binclose.style.transition = '1s'
+        _binclose.style.cursor = 'pointer'
+    })
+</script>
+
+</html>
