@@ -5,7 +5,7 @@ A dynamic and interactive task management app built with HTML, Tailwind CSS, and
 
 ## 🔗 Live Demo
 
-[View to-do-list](https://beamish-melba-85f686.netlify.app/) 🪄
+[View to-do-list](https://sage-moxie-59bd35.netlify.app/) 🪄
 
 ---
 
