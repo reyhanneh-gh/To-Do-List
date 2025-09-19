@@ -214,10 +214,9 @@
         _database = [...myStorage]
     }
     _database.map((val) => {
-        if (!_deletedTasks.includes(val)) {
-            addtsk(val)
-        }
+        addtsk(val)
     })
+
 
     function addtsk(tsk) {
         let task = document.createElement('li')
@@ -271,11 +270,21 @@
             item.style.cursor = 'pointer'
         })
 
-        tsklist.appendChild(task)
-
         // ------------------delete--------------------
         let delBtn = task.querySelector('.delBtn')
         let dellist = document.querySelector('#bin>aside>div>ul')
+
+        if (_deletedTasks.includes(tsk)) {
+            dellist.appendChild(task)
+            delBtn.innerText = 'undo'
+            delBtn.classList.remove('delBtn')
+            delBtn.classList.add('restoreBtn')
+            delBtn.previousElementSibling.previousElementSibling.style.display = 'none'
+            delBtn.previousElementSibling.style.display = 'none'
+        } else {
+            // Active task → keep in main list
+            tsklist.appendChild(task)
+        }
 
         delBtn.addEventListener('click', () => {
             if (delBtn.classList.contains('delBtn')) {
@@ -283,6 +292,8 @@
                 delBtn.innerText = 'undo'
                 delBtn.classList.remove('delBtn')
                 delBtn.classList.add('restoreBtn')
+                delBtn.previousElementSibling.previousElementSibling.style.display = 'none'
+                delBtn.previousElementSibling.style.display = 'none'
                 _deletedTasks.push(task.querySelector('h5').innerText)
                 localStorage.setItem('deletedTasks', JSON.stringify(_deletedTasks))
             } else {
@@ -290,6 +301,8 @@
                 delBtn.innerText = 'delete'
                 delBtn.classList.remove('restoreBtn')
                 delBtn.classList.add('delBtn')
+                delBtn.previousElementSibling.previousElementSibling.style.display = 'flex'
+                delBtn.previousElementSibling.style.display = 'flex'
                 let restoredText = task.querySelector('h5').innerText
                 _deletedTasks = _deletedTasks.filter(item => item !== restoredText)
                 localStorage.setItem('deletedTasks', JSON.stringify(_deletedTasks))
