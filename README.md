@@ -9,14 +9,16 @@ A dynamic and interactive task management app built with HTML, Tailwind CSS, and
 
 ---
 
-### ✨ Features    
+### ✨ Features 
+
+- Saves and stores changes to local storage
 - Edit tasks inline with visibility toggles  
 - Mark tasks as completed with visual checkmarks  
 - Move tasks to trash and restore them with a single click  
 - Popup celebration after completing 3 tasks  
 - Responsive layout built with Tailwind CSS  
 - Scoped logic to ensure each task behaves independently
-- INCOMING FEATURE: - Add tasks to any selected weekly list 
+- Add tasks to any selected weekly list  
 
 ---
 
