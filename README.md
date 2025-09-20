@@ -43,3 +43,7 @@ I love cute designs, and this project inspired me to draw adorable things (like 
 **Developed by**: Reyhaneh Ghalambor  
 **Date**: September 13, 2025  
 **Mentor**: Parsa Ghorbanian
+
+---
+
+### 📸 Screenshots
