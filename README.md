@@ -47,3 +47,37 @@ I love cute designs, and this project inspired me to draw adorable things (like 
 ---
 
 ### 📸 Screenshots
+<table>
+  <tr>
+    <td width="70%" valign="top">
+      <img src="https://github.com/user-attachments/assets/desktop1.png" alt="Desktop View 1" width="100%" />
+    </td>
+    <td width="30%" valign="top">
+      <img src="https://github.com/user-attachments/assets/mobile1.png" alt="Mobile View 1" width="100%" />
+    </td>
+  </tr>
+  <tr>
+    <td width="70%" valign="top">
+      <img src="https://github.com/user-attachments/assets/desktop2.png" alt="Desktop View 2" width="100%" />
+    </td>
+    <td width="30%" valign="top">
+      <img src="https://github.com/user-attachments/assets/mobile2.png" alt="Mobile View 2" width="100%" />
+    </td>
+  </tr>
+  <tr>
+    <td width="70%" valign="top">
+      <img src="https://github.com/user-attachments/assets/desktop3.png" alt="Desktop View 3" width="100%" />
+    </td>
+    <td width="30%" valign="top">
+      <img src="https://github.com/user-attachments/assets/mobile3.png" alt="Mobile View 3" width="100%" />
+    </td>
+  </tr>
+  <tr>
+    <td width="70%" valign="top">
+      <img src="https://github.com/user-attachments/assets/desktop4.png" alt="Desktop View 4" width="100%" />
+    </td>
+    <td width="30%" valign="top">
+      <img src="https://github.com/user-attachments/assets/mobile4.png" alt="Mobile View 4" width="100%" />
+    </td>
+  </tr>
+</table>
