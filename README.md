@@ -50,34 +50,34 @@ I love cute designs, and this project inspired me to draw adorable things (like 
 <table>
   <tr>
     <td width="70%" valign="top">
-      <img src="https://github.com/user-attachments/assets/desktop1.png" alt="Desktop View 1" width="100%" />
+      <img src="https://github.com/user-attachments/assets/095af187-2e99-48c8-becd-c25f95745eca" alt="Desktop View 2" alt="Desktop View 1" width="100%" />
     </td>
     <td width="30%" valign="top">
-      <img src="https://github.com/user-attachments/assets/mobile1.png" alt="Mobile View 1" width="100%" />
+      <img src="https://github.com/user-attachments/assets/9dccdb89-762c-4d28-a68c-96af4e4ec2c7" alt="Mobile View 1" width="100%" />
     </td>
   </tr>
   <tr>
     <td width="70%" valign="top">
-      <img src="https://github.com/user-attachments/assets/desktop2.png" alt="Desktop View 2" width="100%" />
+      <img src="https://github.com/user-attachments/assets/0576511a-d878-40a6-945a-4eea9cdeb2aa" width="100%" />
     </td>
     <td width="30%" valign="top">
-      <img src="https://github.com/user-attachments/assets/mobile2.png" alt="Mobile View 2" width="100%" />
+      <img src="https://github.com/user-attachments/assets/a0174b6b-cfed-435a-b098-f9713a0108f3" alt="Mobile View 2" width="100%" />
     </td>
   </tr>
   <tr>
     <td width="70%" valign="top">
-      <img src="https://github.com/user-attachments/assets/desktop3.png" alt="Desktop View 3" width="100%" />
+      <img src="https://github.com/user-attachments/assets/ffe81b8e-8765-4de7-8d8e-727bbcde461c" alt="Desktop View 3" width="100%" />
     </td>
     <td width="30%" valign="top">
-      <img src="https://github.com/user-attachments/assets/mobile3.png" alt="Mobile View 3" width="100%" />
+      <img src="https://github.com/user-attachments/assets/dce17bcd-d904-46e3-ae6a-2a0b163d1221" alt="Mobile View 3" width="100%" />
     </td>
   </tr>
   <tr>
     <td width="70%" valign="top">
-      <img src="https://github.com/user-attachments/assets/desktop4.png" alt="Desktop View 4" width="100%" />
+      <img src="https://github.com/user-attachments/assets/56534f4b-9d49-48de-8e8c-b3d71c16837e" alt="Desktop View 4" width="100%" />
     </td>
     <td width="30%" valign="top">
-      <img src="https://github.com/user-attachments/assets/mobile4.png" alt="Mobile View 4" width="100%" />
+      <img src="https://github.com/user-attachments/assets/9795b3f8-ec86-47f3-82c5-3fa59694fd38" alt="Mobile View 4" width="100%" />
     </td>
   </tr>
 </table>
